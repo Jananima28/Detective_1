@@ -1,0 +1,74 @@
+.checkbutton {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:576px) {
+    .navLinks {
+        background-color: rgb(47, 46, 46);
+        position: absolute;
+        top: 110px;
+        flex-direction: column;
+        display: none;
+        height: 300px;
+        width: 100%;
+    }
+
+    .navLinks li {
+        background-color: rgb(46, 42, 42);
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navLinks li:hover {
+        background-color: rgb(113, 103, 103);
+    }
+
+    .checkbutton {
+        display: block;
+    }
+
+    #check:checked~.navLinks {
+        display: block;
+    }
+
+    .content {
+        /* font-size: 15px; */
+        padding: 200px 0px;
+    }
+
+    .cardContainer {
+        padding: 30px 60px;
+
+    }
+
+    .imageContainer {
+        padding: 30px 60px;
+    }
+    .dropdownList li{
+        opacity: 0;
+        visibility: hidden;
+    }
+    foot{
+        flex-direction: column;
+        text-align: center;
+    }
+    .icons{
+        width: 20%;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 7px;
+    }
+    .designer p{
+        margin: 0 auto;
+    }
+}
